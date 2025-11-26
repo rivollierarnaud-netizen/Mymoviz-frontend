@@ -14,7 +14,7 @@ function Home() {
     const [moviesData, setMoviesData] = useState([]);
 
     useEffect(() => {
-        fetch(`${BACKEND_URL}/movies`)
+        fetch("https://mymoviz-backend-three-inky.vercel.app/movies")
             .then((response) => response.json())
             .then((data) => {
                 if (data.movies) {
