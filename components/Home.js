@@ -6,12 +6,12 @@ import Movie from "./Movie";
 import "antd/dist/antd.css";
 import styles from "../styles/Home.module.css";
 
+const BACKEND_URL = "https://mymoviz-backend-three-inky.vercel.app";
+const IMG_BASE_URL = "https://image.tmdb.org/t/p/w500";
+
 function Home() {
     const [likedMovies, setLikedMovies] = useState([]);
     const [moviesData, setMoviesData] = useState([]);
-
-    const BACKEND_URL = "https://mymoviz-backend-three-inky.vercel.app";
-    const IMG_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
     useEffect(() => {
         fetch(`${BACKEND_URL}/movies`)
