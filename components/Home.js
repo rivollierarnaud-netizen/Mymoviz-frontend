@@ -10,7 +10,7 @@ function Home() {
     const [likedMovies, setLikedMovies] = useState([]);
     const [moviesData, setMoviesData] = useState([]);
 
-    const BACKEND_URL = "mymoviz-backend-three-inky.vercel";
+    const BACKEND_URL = "https://mymoviz-backend-three-inky.vercel";
     const IMG_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
     useEffect(() => {
